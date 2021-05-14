@@ -212,3 +212,7 @@ Spree::Config.allowed_image_mime_types = %w(image/jpeg image/jpg image/png image
 # ...
 ```
 {% endcode %}
+
+## Modifying Variant Options
+
+MiniMagick allows the processing of variants with many [options](https://github.com/janko/image_processing/blob/master/doc/minimagick.md#imageprocessingminimagick) to customize your images. In order to take full advantage of these options, we will need to inherent our our current attachment class and make a few modifications.
