@@ -96,7 +96,7 @@ end
 {% endtab %}
 {% endtabs %}
 
-## Customizing Size Defaults
+## Customizing Size Defaults and Attachment Module Override
 
 As you can see from the above adapter modules, the default configuration provides only a few variant sizes out of the box. Changing the image sizing is simply a configuration of an attachment module and is referenced when the attachment class method `style_to_size` is called. We could create ourselves a new adapter for our app and override the settings that way, but in this case, we just want to add some new types of sizings for our UI display.
 
@@ -200,4 +200,3 @@ After appending these new styles into settings, they can be utilized in your sto
 <%= render 'spree/admin/shared/image', image: product.gallery.images.first, size: :jumbo %>
 ```
 {% endcode %}
-
